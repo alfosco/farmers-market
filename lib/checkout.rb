@@ -8,4 +8,11 @@ class Checkout
   def scan(product)
     basket << product
   end
+
+  def current_basket
+  end
+
+  def total_price
+    basket.map(&:price).inject(0, :+)
+  end
 end
