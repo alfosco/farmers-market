@@ -41,4 +41,5 @@ class CheckoutTest < Minitest::Test
 
     assert_equal 25.09, co.total_price
   end
+
 end
